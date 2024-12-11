@@ -1,12 +1,12 @@
 <!-- 倒數邏輯 -->
 <template>
-  <v-container>
+  <v-container style="color: red">
     <v-row>
       <v-col cols="12">
         <h1>目前事項{{ currentText }}</h1>
       </v-col>
       <v-col cols="12">
-        <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="white"></digit>
+        <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="red"></digit>
       </v-col>
       <v-col cols="12">
         <v-btn

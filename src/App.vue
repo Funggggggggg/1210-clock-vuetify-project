@@ -2,7 +2,7 @@
   <!--網頁最外層 -->
   <v-app>
     <!-- 導覽列 -->
-    <v-app-bar>
+    <v-app-bar class="bg-red">
       <!-- 放 container 否則太寬 -->
       <v-container class="d-flex align-center">
         <v-app-bar-title>番茄鐘</v-app-bar-title>
@@ -12,7 +12,7 @@
       </v-container>
     </v-app-bar>
     <!-- 放路由 -->
-    <v-main>
+    <v-main class="background-container">
       <!--一般的原件換頁便會銷毀，因此做特殊設定保留元件功能。詳細看官網資料 -->
       <!--
         slot = 插槽 = 自訂元件內的某部分 HTML
@@ -33,3 +33,13 @@
     </v-main>
   </v-app>
 </template>
+
+<style scoped>
+.background-container {
+  background-image: url(https://i.imgur.com/moOjFET.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100vw;
+}
+</style>

@@ -86,7 +86,7 @@ defineProps({
   color: {
     type: String,
     default() {
-      return 'white'
+      return 'red'
     },
   },
 })

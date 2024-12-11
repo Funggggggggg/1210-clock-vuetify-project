@@ -1,6 +1,6 @@
 <template>
   <!-- 同 bootstrap 一樣概念的切法 -->
-  <v-container>
+  <v-container style="color: red">
     <v-row>
       <v-col cols="12">
         <h1 class="text-center">設定鈴聲</h1>
